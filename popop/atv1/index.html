@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda de Contatos</h1>
+
+        <div class="section">
+            <input type="text" id="filtro" placeholder="Filtrar contatos...">
+        </div>
+
+        <div class="section form-cadastro">
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="email" id="email" placeholder="E-mail">
+            <input type="text" id="telefone" placeholder="Telefone">
+            <button id="btn-cadastrar" onclick="salvarContato()">Cadastrar</button>
+        </div>
+
+        <div class="section total-count">
+            Total de Contatos: <span id="total">0</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-contatos">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
